@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+        {% include sidebar.html %}
+
+        <main>
+            <h1>blogs</h1>
+            <nav class="blog-nav">
+                {% for post in site.posts %}
+                    <a href="{{ post.url | relative_url }}" class="blog-item">
+                        {{ post.title }}
+                    </a>
+                {% endfor %}
+            </nav>
+        </main>
+
+        {% include footer.html %}
+        {% include script.html %}
+    </body>
+</html>
