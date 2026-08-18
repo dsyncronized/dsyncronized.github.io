@@ -1,0 +1,89 @@
+:root {
+  --black: #20202a;
+  --white: #c6d0e9;
+  --red: #d95e59;
+  --red-bright: #ebb9b9;
+  --green: #8fc587;
+  --green-bright: #caf6bb;
+  --yellow: #ffcf85;
+  --yellow-bright: #e6dfb8;
+  --blue: #4a83c3;
+  --blue-bright: #cddbf9;
+  --magenta: #bf83b5;
+  --magenta-bright: #f6bbe7;
+  --cyan: #4eb3cd;
+  --cyan-bright: #b8dceb;
+}
+
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+.red {
+  color: var(--red);
+}
+
+.red-bright {
+  color: var(--red-bright);
+}
+
+.green {
+  color: var(--green);
+}
+
+.green-bright {
+  color: var(--green-bright);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.yellow-bright {
+  color: var(--yellow-bright);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.blue-bright {
+  color: var(--blue-bright);
+}
+
+.magenta {
+  color: var(--magenta);
+}
+
+.magenta-bright {
+  color: var(--magenta-bright);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.cyan-bright {
+  color: var(--cyan-bright);
+}
+
+
+main a {
+  color: var(--blue);
+}
+
+main a:visited {
+  color: var(--magenta-bright);
+}
+
+main a:hover {
+  color: var(--cyan);
+}
+
+main a:visited:hover {
+  color: var(--magenta);
+}

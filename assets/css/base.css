@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+main a {
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+
+main p {
+  margin-top: 0px;
+}
