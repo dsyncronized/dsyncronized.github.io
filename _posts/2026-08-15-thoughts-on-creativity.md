@@ -1,8 +1,9 @@
 ---
-title: How Creativity becomes Technical and How AI Breaks the Flow
-catalog_title: thoughts on creativity
+title: thoughts on creativity
+description: how creativity becomes technical and how AI breaks the flow
 layout: blog
 ---
+# How Creativity becomes Technical and How AI Breaks the Flow
 
 I think that everything creative takes on a more technical character when done enough times. Think about drawing. At first, you would probably think about what you're going to make, how you should approach it, and what scene the object is in. But when you draw the same image, at a certain point it's going to become more of a "How much pressure should I put on this stroke?" or "How should the clothing wrap around the character?" type of thing. Though obviously, drawing the same image over and over again is neither fun nor valued.<br>
 <small>im not an artist so maybe i'm just a larp lmao</small>
@@ -18,5 +19,9 @@ In an era where most Gen Z and Gen Alpha students are using AI for their assignm
 But alas, his words were not fully realized by the younger generation. Such a tragedy. It is to my utmost sorrow that he was unable to single-handedly shape a generation or two. That aside, the rise of AI reliance is definitely not of unworthy concern.
 
 There is also a benefit to using AI in the tech field. Let's think back to when I talked about the technical side of coding. AI is objectively better than you at coding as a whole. That's just the fact. Optimizing code or writing documentation aren't relatively low-level tasks to do, they usually take a long time despite offering a modest value. That's where AI comes along and does those things. It is not hands-free. You will still need to verify every line of code and every piece of information that the AI has written. But it can substantially reduce the time required to complete those tasks. Like any tool, it has its limitations and benefits. And like any tool, you cannot replace your brain with it.
+
+Now! I am not in any way, shape, or form telling you to not use AI completely. I use AI, there is no shame in that. The problem lies within the people who get consumed by it. So that's why I'm telling you to leverage AI in moderation. Use it as an assist for your work. People who do not use AI in their work are at a major disadvantage. And as I'm speaking, people are getting laid off en masse due to AI being more economic for higher-ups. The reality is that the technical world doesn't forgive people who do not utilize AI. Cry, whine, protest all you want, the world will not ever go back to like the times where widespread LLMs weren't a thing. Look around you. People are and will be using LLMs, at least until a shiny new convenient tool pops up from somewhere else.
+
+The silver lining is that AI will most likely only replace those who are mediocre at their fields. so why not **learn**?
 
 <small>*you wont get anything from generating art using AI though :^)*</small>

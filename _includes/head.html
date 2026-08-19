@@ -2,6 +2,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="{% if page.layout == 'blog' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ page.image | default: '/assets/images/embed.png' | absolute_url }}">
+
     <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/colors.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">

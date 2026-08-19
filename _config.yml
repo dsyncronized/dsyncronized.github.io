@@ -1,5 +1,6 @@
 title: dsyncronized
 author: dsync
 url: "https://dsyncronized.github.io"
+description: my little corner of the internet
 baseurl: ""
 permalink: /blog/:title/

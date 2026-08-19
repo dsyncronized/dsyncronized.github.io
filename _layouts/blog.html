@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     {% include head.html %}
 
@@ -10,11 +10,10 @@
 
         <main>
             <div class="blog-content">
-                <h1>{{ page.title }}</h1>
+                {{ content }}
                 <time datetime="{{ page.date | date_to_xmlschema }}">
                     {{ page.date | date: "%B %-d, %Y" }}
                 </time>
-                {{ content }}
             </div>
         </main>
 

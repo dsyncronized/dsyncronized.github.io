@@ -42,7 +42,7 @@
 }
 
 .image-container figure:has(img:hover) figcaption {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
