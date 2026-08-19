@@ -1,0 +1,55 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 55px;
+  row-gap: 5px;
+  margin-bottom: 15px;
+}
+
+.image-container figure {
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  outline: 2px solid transparent;
+  outline-offset: 6px;
+  transition: outline-color 0.2s ease;
+}
+
+.image-container figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: clamp(16px, 2vw, 18px);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.image-container img:hover {
+  outline-color: var(--white);
+}
+
+.image-container figure:has(img:hover) figcaption {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    width: 90%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 4vw;
+    row-gap: 4vw;
+  }
+}

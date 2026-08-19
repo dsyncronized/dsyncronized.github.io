@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/gallery.css' | relative_url }}">
+
+    <body>
+        {% include header.html %}
+        {% include sidebar.html %}
+
+        <main>
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+        {% include script.html %}
+    </body>
+</html>

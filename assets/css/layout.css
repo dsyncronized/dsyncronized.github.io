@@ -24,7 +24,7 @@ main {
   align-items: center;
 
   text-align: center;
-  font-size: clamp(13px, 2vw, 20px);
+  font-size: clamp(15px, 2vw, 20px);
   padding: 10px 20px;
   flex: 1;
 }
