@@ -13,6 +13,8 @@
   --magenta-bright: #f6bbe7;
   --cyan: #4eb3cd;
   --cyan-bright: #b8dceb;
+  --link: #6a9ed6;
+  --link-hover: #9bbce5;
 }
 
 .black {
@@ -73,7 +75,7 @@
 
 
 main a {
-  color: var(--blue);
+  color: var(--link);
 }
 
 main a:visited {
@@ -81,7 +83,7 @@ main a:visited {
 }
 
 main a:hover {
-  color: var(--cyan);
+  color: var(--link-hover);
 }
 
 main a:visited:hover {
