@@ -1,6 +1,6 @@
 .blog-content {
-  margin: 0px;
   width: min(1000px, 100%);
+  margin: 0 auto;
   text-align: justify;
 }
 
@@ -48,6 +48,7 @@
 .blog-content time {
   display: block;
   font-size: clamp(13px, 2vw, 15px);
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 2px;
 }

@@ -3,7 +3,6 @@ title: tools i use
 description: the tools i use to create the things i want
 layout: blog
 ---
-
 # the tools i use everyday
 
 ### table of contents:
@@ -42,4 +41,4 @@ i use vim! neovim to be exact. at first, the technical speed of the editor is wh
 zen browser! zen browser is an amazing fork of mozilla firefox. in the same nature as using vim, i've never used a browser with vertical tabs before. but as soon as i discovered about zen browser, i was sold. the fluidity compared to google chrome is just... wow... and thanks to the vertical tabs, i feel much more comfortable multitasking with multiple tabs open, it really just feels so much more spacious.
 
 ### image editor
-none other than the glorious GNU Image Manipulation Program! also known as gimp, having used it for basically all of my life, it feels as if something is missing when i'm using other image editing software other than gimp. the fact that it's free almost make me feel like i'm robbing them!
+none other than the glorious GNU Image Manipulation Program! also known as GIMP, having used it for basically all of my life, it feels as if something is missing when i'm using other image editing software other than gimp. the fact that it's free almost make me feel like i'm robbing them!
