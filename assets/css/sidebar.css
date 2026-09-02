@@ -92,7 +92,7 @@ body.loaded #sidebar {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  transition: color 0.137s ease-in;
+  transition: color 0.13s ease-in;
 
   padding: 10px 15px;
   text-decoration: none;
