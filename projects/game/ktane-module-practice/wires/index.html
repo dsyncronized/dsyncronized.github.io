@@ -2,7 +2,16 @@
 layout: default
 title: KTaNE wires
 ---
-<h2>wires!</h2>
-<canvas id="gameCanvas" width="1000" height="720"></canvas>
+<link rel="stylesheet" href="style.css">
+<h2>simple wires!</h2>
+<div class="game-container">
+    <canvas id="gameCanvas" width="1000" height="720"></canvas>
+    <div class="info">
+        click on the wire that needs to be cut, green = correct. red = wrong<br><br>
+        serial number:
+        <p id="serial-number" style="font-size: 52px"><b>aaa</b></p>
+    </div>
+</div>
+
 <a href="../">go back to menu!</a>
 <script src="script.js"></script>

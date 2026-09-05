@@ -1,0 +1,10 @@
+.game-container {
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    right: 1100px;
+    top: 0;
+    width: 200px;
+}
