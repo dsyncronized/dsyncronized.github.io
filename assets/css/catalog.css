@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 10px;
+  outline: 2px solid var(--white);
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  font-size: clamp(15px, 2vw, 18px);
+  padding: 10px 30px;
+  text-decoration: none;
+
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-color: var(--white);
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+
+  z-index: -1;
+}
+
+.item:hover::before,
+.item:focus::before {
+  opacity: 1;
+}
+
+.item:visited {
+  color: var(--white);
+}
+
+.item:hover,
+.item:focus,
+.item:hover:visited,
+.item:focus:visited {
+  color: var(--black);
+}
