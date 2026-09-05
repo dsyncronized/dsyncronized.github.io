@@ -23,3 +23,11 @@ main a {
 main p {
   margin-top: 0px;
 }
+
+canvas {
+  padding-bottom: 20px;
+}
+
+main h1, main h2 {
+  margin-top: 0
+}

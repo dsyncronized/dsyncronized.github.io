@@ -9,14 +9,7 @@
         {% include sidebar.html %}
 
         <main>
-            <h1>blogs</h1>
-            <nav class="nav">
-                {% for post in site.posts %}
-                    <a href="{{ post.url | relative_url }}" class="item">
-                        {{ post.title }}
-                    </a>
-                {% endfor %}
-            </nav>
+          {{ content }}
         </main>
 
         {% include footer.html %}
