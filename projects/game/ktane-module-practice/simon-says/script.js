@@ -150,6 +150,7 @@ function stopSequence() {
 function resetGame() {
     gameData = generateGame()
     nextButton = 0;
+    console.log(gameData.solution)
 
     const overlay = document.getElementById("game-overlay");
     overlay.classList.remove("flash");
@@ -193,14 +194,13 @@ function gameLogic() {
             if (i == expectedButton) {
                 nextButton++
 
-                if (nextButton == gameData.buttonCount) {
+                if (nextButton == gameData.solution.length) {
                     isGameWon(true)
                 };
             } else {
                 isGameWon(false)
-                console.log(gameData)
             }
-            console.log([gameData.solution, expectedButton])
+            console.log(nextButton)
         });
     };
 };
