@@ -351,7 +351,7 @@ function fadeFlash(color) {
                 ctx.fillStyle = color + opacity + ")";
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-                opacity -= 0.02;
+                opacity -= 0.03;
                 requestAnimationFrame(fade);
             } else {
                 resolve();
