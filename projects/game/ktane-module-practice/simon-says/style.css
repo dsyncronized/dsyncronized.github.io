@@ -1,0 +1,93 @@
+.game-container {
+  position: relative;
+  height: 300px;
+}
+
+#game-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+
+    opacity: 1;
+}
+
+#game-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#game-overlay.flash {
+    animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+  0% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.info {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  width: 200px;
+}
+
+.note {
+  position: absolute;
+  top: 270px;
+  line-height: 24px;
+}
+
+.button {
+  border-radius: 10px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.button:active {
+    transform: translateX(-4px);
+    transform: translateY(4px);
+}
+
+#buttons {
+  position: absolute;
+  rotate: -45deg;
+  top: 30px;
+  right: -105px;
+}
+
+#button0 {
+  background-color: #4a83c3;
+}
+#button0.active {
+  background: radial-gradient(circle at center, #b8f3f0 0%, #73b6e8 100%);
+}
+
+#button1 {
+  background-color: #c94f4f;
+}
+#button1.active {
+  background: radial-gradient(circle at center, #ffd6d6 0%, #f28b8b 100%);
+}
+
+#button2 {
+  background-color: #70ad68;
+}
+#button2.active {
+  background: radial-gradient(circle at center, #dff7d8 0%, #a8d99f 100%);
+}
+
+#button3 {
+  background-color: #e8ae55;
+}
+#button3.active {
+  background: radial-gradient(circle at center, #fff3c7 0%, #f6d58d 100%);
+}
