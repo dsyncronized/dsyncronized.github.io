@@ -1,0 +1,57 @@
+.keypad-container {
+  width: 100px;
+  height: 100px;
+  background-color: #363647;
+  border-radius: 10px;
+}
+
+.keypad-container:hover {
+  background-color: #51516b;
+}
+
+.keypad-container.correct {
+  background-color: #8fc587;
+}
+
+.keypad {
+  width: 95px;
+  height: 95px;
+  border: none;
+  margin-top: 5px;
+
+  background-color: #c6d0e9;
+
+  mask-image: url("../assets/keypads/10-six.webp");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+#game-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+
+    opacity: 1;
+}
+
+#game-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#game-overlay.flash {
+    animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+  0% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
