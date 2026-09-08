@@ -1,10 +1,54 @@
 .game-container {
-    position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#gameCanvas {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto !important;
+  aspect-ratio: auto;
+  margin: 0;
+  padding: 0;
+  touch-action: none;
 }
 
 .info {
-    position: absolute;
-    right: 1100px;
-    top: 0;
-    width: 200px;
+  position: absolute;
+  right: -220px;
+  top: 0;
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  #gameCanvas {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 1000 / 720;
+    touch-action: none;
+  }
+
+  .info {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #serial-number {
+    font-size: 32px !important;
+    margin: 5px 0;
+  }
 }

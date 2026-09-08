@@ -212,29 +212,37 @@ function resetGame() {
     hideStrip();
 }
 
-button.addEventListener("pointerdown", () => {
+button.addEventListener("pointerdown", (event) => {
+    event.preventDefault();
+
+    button.setPointerCapture(event.pointerId);
+
     holding = true;
     holdStart = Date.now();
     holdTriggered = false;
 });
 
-button.addEventListener("pointerup", () => {
+button.addEventListener("pointerup", (event) => {
     if (!holding) return;
 
     holding = false;
-    let quickPressed = false;
 
     const holdTime = Date.now() - holdStart;
-
-    if (holdTime <= 1000) {
-        quickPressed = true
-    };
+    const quickPressed = holdTime <= 1000;
 
     gameRules(quickPressed);
+
+    if (button.hasPointerCapture(event.pointerId)) {
+        button.releasePointerCapture(event.pointerId);
+    }
 });
 
-button.addEventListener("pointercancel", () => {
+button.addEventListener("pointercancel", (event) => {
     holding = false;
+
+    if (button.hasPointerCapture(event.pointerId)) {
+        button.releasePointerCapture(event.pointerId);
+    }
 });
 
 let currentMinutes = 0;

@@ -301,22 +301,28 @@ function validateWire(wireIndex) {
 // 1 = red, 2 = blue, 3 = yellow, 4 = white, 5 = black
 
 function clickableArea(mouseX, mouseY) {
+  const sortedWires = getWiresInOrder();
+
+  for (let i = 0; i < sortedWires.length; i++) {
+    const wirePosition = sortedWires[i][0];
+
     const wireX = canvas.width * 0.1075;
-    const sortedWires = getWiresInOrder();
+    const wireY = getWireY(
+      wirePosition + 1,
+      0.10,
+      0.75
+    );
 
-    for (let i = 0; i < sortedWires.length; i++) {
-        const wirePosition = sortedWires[i][0];
-        const wireY = getWireY(wirePosition + 1, 0.10, 0.75);
-
-        if (
-            mouseX >= wireX &&
-            mouseX <= wireX + wireWidth &&
-            mouseY >= wireY - wireHeight / 2 &&
-            mouseY <= wireY + wireHeight / 2
-        ) {
-                validateWire(i)
-        }
+    if (
+      mouseX >= wireX &&
+      mouseX <= wireX + wireWidth &&
+      mouseY >= wireY - wireHeight / 2 &&
+      mouseY <= wireY + wireHeight / 2
+    ) {
+      validateWire(i);
+      return;
     }
+  }
 }
 
 async function greenFlash() {
@@ -364,11 +370,11 @@ function fadeFlash(color) {
 
 renderBackground()
 renderGame()
-canvas.addEventListener("click", (event) => {
-    const rect = canvas.getBoundingClientRect();
+canvas.addEventListener("pointerdown", (event) => {
+  const rect = canvas.getBoundingClientRect();
 
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+  const x = (event.clientX - rect.left) * (canvas.width / rect.width);
+  const y = (event.clientY - rect.top) * (canvas.height / rect.height);
 
-    clickableArea(mouseX, mouseY);
+  clickableArea(x, y);
 });
