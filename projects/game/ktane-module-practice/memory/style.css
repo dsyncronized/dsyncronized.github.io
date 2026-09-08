@@ -1,0 +1,107 @@
+.game-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 170px;
+}
+
+.top-display p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.top-display {
+  background-color: #20202a;
+  outline: 2px solid #c6d0e9;
+  height: 40px;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 0px 10px;
+  color: #c6d0e9;
+  background-color: #20202a;
+  outline: 2px solid #c6d0e9;
+  margin-top: 10px;
+  width: 40px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: #20202a;
+  background-color: #c6d0e9;
+  outline: 2px solid #20202a;
+  transform: translateY(2%);
+}
+
+.button:active {
+  transform: translateY(10%);
+}
+
+.module {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.stage-counter {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+
+  width: 2.5em;
+  height: 10em;
+  left: calc(50% + 6%);
+  top: 6.5em;
+  background-color: #20202a;
+  outline: 2px solid #c6d0e9;
+
+}
+
+.stage-pip {
+  width: 80%;
+  height: 13.5%;
+}
+
+#game-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+
+  opacity: 1;
+}
+
+#game-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#game-overlay.flash {
+  animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.boilerplate {
+  margin-top: 50px;
+}
