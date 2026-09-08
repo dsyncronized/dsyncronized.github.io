@@ -10,11 +10,12 @@
   font-size: 24px;
   font-weight: 600;
 }
+
 .top-display {
   background-color: #20202a;
   outline: 2px solid #c6d0e9;
   height: 40px;
- 
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,7 +60,7 @@
 
   width: 2.5em;
   height: 10em;
-  left: calc(50% + 6%);
+  left: calc(50% + 120px);
   top: 6.5em;
   background-color: #20202a;
   outline: 2px solid #c6d0e9;
