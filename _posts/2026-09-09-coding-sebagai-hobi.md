@@ -1,5 +1,5 @@
 ---
-title: coding sebagai hobi
+title: dampak AI terhadap koding
 description: this is a school project, ignore this blog please
 layout: blog
 ---
